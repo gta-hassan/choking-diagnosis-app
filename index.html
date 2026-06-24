@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق تشخيص الاختناق - مخطط بياني</title>
+    <title>تطبيق تشخيص الاختناق</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- الشريط الجانبي الأيسر -->
+        <!-- الشريط الجانبي -->
         <aside class="sidebar">
             <div class="reset-section">
-                <button id="resetBtn" class="reset-button">
-                    <span>🔄</span> إعادة التعيين
-                </button>
+                <button id="resetBtn" class="reset-button">🔄 إعادة التعيين</button>
                 <div class="progress">
                     <span id="progressCount">0</span> / 5
                 </div>
             </div>
 
-            <div class="stats-container">
+            <div class="stats">
                 <div class="stat wrong">
-                    <span class="count">❌</span>
+                    <span class="icon">❌</span>
                     <span id="wrongCount">0</span>
                 </div>
                 <div class="stat correct">
-                    <span class="count">✅</span>
+                    <span class="icon">✅</span>
                     <span id="correctCount">0</span>
                 </div>
             </div>
 
             <div class="info-box">
-                <p>⚠️ اسأل الكلمات بالترتيب وفق نتائج الاختبار لتحديد الإجراء المناسب</p>
+                <p>⚠️ اتبع الخطوات لتحديد الإجراء الصحيح</p>
             </div>
 
             <div class="keywords-section">
-                <h3>📋 خطوات التشخيص</h3>
-                <div id="keywordsList" class="keywords-list">
-                </div>
+                <h3>📋 الخطوات</h3>
+                <div id="keywordsList" class="keywords-list"></div>
             </div>
         </aside>
 
@@ -48,10 +45,7 @@
                 <p>إرشادات إسعاف المصابين بالاختناق</p>
             </header>
 
-            <!-- المخطط البياني التفاعلي -->
-            <div class="flowchart-wrapper">
-                <div id="flowchart" class="flowchart"></div>
-            </div>
+            <div id="flowchartContainer" class="flowchart-container"></div>
         </main>
     </div>
 
