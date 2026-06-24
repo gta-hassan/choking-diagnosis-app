@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق تشخيص الاختناق</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- الشريط الجانبي الأيسر -->
+        <aside class="sidebar">
+            <div class="reset-section">
+                <button id="resetBtn" class="reset-button">
+                    <span>🔄</span> إعادة التعيين
+                </button>
+                <div class="progress">
+                    <span id="progressCount">0</span> / 5
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat wrong">
+                    <span class="icon">❌</span>
+                    <span id="wrongCount">أخطاء: 0</span>
+                </div>
+                <div class="stat correct">
+                    <span class="icon">✅</span>
+                    <span id="correctCount">صحيح: 0</span>
+                </div>
+            </div>
+
+            <div class="keywords-section">
+                <h3>📋 الكلمات المفتاحية</h3>
+                <div id="keywordsList" class="keywords-list">
+                    <!-- سيتم ملؤها بواسطة JavaScript -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <header>
+                <h1>🏥 تطبيق تشخيص حالات الاختناق</h1>
+                <p>إرشادات إسعاف المصابين بالاختناق</p>
+            </header>
+
+            <div id="flowchartContainer" class="flowchart-container">
+                <!-- المخطط البياني سيتم ملأه بواسطة JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
