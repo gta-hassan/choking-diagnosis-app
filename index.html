@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق تشخيص الاختناق</title>
+    <title>تطبيق تشخيص الاختناق - مخطط بياني</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
             </div>
 
             <div class="info-box">
-                <p>⚠️ اتبع الخطوات لتحديد الإجراء الصحيح</p>
+                <p>⚠️ اتبع الأسئلة لتحديد الإجراء الصحيح</p>
             </div>
 
             <div class="keywords-section">
@@ -45,7 +45,11 @@
                 <p>إرشادات إسعاف المصابين بالاختناق</p>
             </header>
 
-            <div id="flowchartContainer" class="flowchart-container"></div>
+            <!-- المخطط البياني -->
+            <div class="flowchart-wrapper">
+                <svg id="flowchartSvg" class="flowchart-svg"></svg>
+                <div id="interactiveContainer" class="interactive-area"></div>
+            </div>
         </main>
     </div>
 
