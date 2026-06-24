@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق تشخيص الاختناق</title>
+    <title>تطبيق تشخيص الاختناق - مخطط بياني</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,21 +19,24 @@
                 </div>
             </div>
 
-            <div class="stats">
+            <div class="stats-container">
                 <div class="stat wrong">
-                    <span class="icon">❌</span>
-                    <span id="wrongCount">أخطاء: 0</span>
+                    <span class="count">❌</span>
+                    <span id="wrongCount">0</span>
                 </div>
                 <div class="stat correct">
-                    <span class="icon">✅</span>
-                    <span id="correctCount">صحيح: 0</span>
+                    <span class="count">✅</span>
+                    <span id="correctCount">0</span>
                 </div>
             </div>
 
+            <div class="info-box">
+                <p>⚠️ اسأل الكلمات بالترتيب وفق نتائج الاختبار لتحديد الإجراء المناسب</p>
+            </div>
+
             <div class="keywords-section">
-                <h3>📋 الكلمات المفتاحية</h3>
+                <h3>📋 خطوات التشخيص</h3>
                 <div id="keywordsList" class="keywords-list">
-                    <!-- سيتم ملؤها بواسطة JavaScript -->
                 </div>
             </div>
         </aside>
@@ -45,8 +48,9 @@
                 <p>إرشادات إسعاف المصابين بالاختناق</p>
             </header>
 
-            <div id="flowchartContainer" class="flowchart-container">
-                <!-- المخطط البياني سيتم ملأه بواسطة JavaScript -->
+            <!-- المخطط البياني التفاعلي -->
+            <div class="flowchart-wrapper">
+                <div id="flowchart" class="flowchart"></div>
             </div>
         </main>
     </div>
